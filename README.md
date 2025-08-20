@@ -1,2 +1,99 @@
-# Boutique-
-Page de vente Canva &amp; Capcut 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Vente - Israël ADAKPON</title>
+<style>
+  body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; }
+  
+  /* Header */
+  header { background:#1a1a1a; color:white; padding:20px; text-align:center; }
+  header h1 { margin:0; font-size:2em; }
+
+  /* Hero Section */
+  .hero { text-align:center; padding:50px 20px; background:linear-gradient(135deg, #4CAF50, #2E7D32); color:white; }
+  .hero h2 { font-size:2em; margin-bottom:20px; }
+  .hero button { background:white; color:#4CAF50; border:none; padding:15px 35px; cursor:pointer; border-radius:5px; font-weight:bold; transition:0.3s; }
+  .hero button:hover { background:#333; color:white; }
+
+  /* Products Section */
+  .products { display:flex; flex-direction:column; align-items:center; gap:20px; padding:20px; }
+  .product { background:white; padding:20px; border-radius:10px; width:90%; max-width:400px; text-align:center; box-shadow:0 2px 15px rgba(0,0,0,0.2); }
+  .product img { width:100%; border-radius:10px; margin-bottom:10px; }
+  .product h3 { margin:10px 0; color:#333; }
+  .product p { color:#555; margin:5px 0; }
+  .product button { background:#4CAF50; color:white; border:none; padding:10px 20px; cursor:pointer; border-radius:5px; margin:5px 0; width:80%; }
+  .whatsapp-btn { background:#25D366; }
+
+  /* Order Form */
+  .order-form { background:white; max-width:500px; margin:40px auto; padding:20px; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.2);}
+  .order-form h2 { text-align:center; margin-bottom:20px; }
+  .order-form input, .order-form select, .order-form textarea { width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px; }
+  .order-form button { width:100%; background:#4CAF50; color:white; border:none; padding:15px; font-size:1em; cursor:pointer; border-radius:5px; transition:0.3s; }
+  .order-form button:hover { background:#2E7D32; }
+
+  /* Footer */
+  footer { text-align:center; padding:20px; background:#1a1a1a; color:white; margin-top:40px; }
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Israël ADAKPON - Vente Exclusive</h1>
+</header>
+
+<div class="hero">
+  <h2>Des services et produits uniques rien que pour vous !</h2>
+  <button onclick="document.getElementById('order-form').scrollIntoView();">Commander maintenant</button>
+</div>
+
+<div class="products">
+
+  <!-- Produit 1 : Canva Premium -->
+  <div class="product">
+    <img src="canva.jpg" alt="Canva Premium">
+    <h3>Canva Premium</h3>
+    <p>Accédez à toutes les fonctionnalités premium de Canva pour créer des designs professionnels facilement : modèles exclusifs, images de haute qualité et outils avancés pour vos projets créatifs.</p>
+    <p>Prix : 1 200 F CFA</p>
+    <button onclick="document.getElementById('order-form').scrollIntoView();">Commander</button>
+    <a href="https://wa.me/2290140615372?text=Bonjour%20Israël,%20je%20veux%20commander%20Canva%20Premium" target="_blank">
+      <button class="whatsapp-btn">Commander via WhatsApp</button>
+    </a>
+  </div>
+
+  <!-- Produit 2 : CapCut Premium -->
+  <div class="product">
+    <img src="capcut.jpg" alt="CapCut Premium">
+    <h3>CapCut Premium</h3>
+    <p>Profitez de toutes les options premium de CapCut pour monter vos vidéos comme un pro : effets spéciaux, transitions, musique libre de droits et exportation en haute qualité.</p>
+    <p>Prix : 4 000 F CFA</p>
+    <button onclick="document.getElementById('order-form').scrollIntoView();">Commander</button>
+    <a href="https://wa.me/2290140615372?text=Bonjour%20Israël,%20je%20veux%20commander%20CapCut%20Premium" target="_blank">
+      <button class="whatsapp-btn">Commander via WhatsApp</button>
+    </a>
+  </div>
+
+</div>
+
+<div class="order-form" id="order-form">
+  <h2>Formulaire de commande</h2>
+  <form action="mailto:tonemail@example.com" method="post" enctype="text/plain">
+    <input type="text" name="nom" placeholder="Votre nom" required>
+    <input type="email" name="email" placeholder="Votre email" required>
+    <select name="produit" required>
+      <option value="">Choisissez un produit</option>
+      <option value="Canva Premium">Canva Premium</option>
+      <option value="CapCut Premium">CapCut Premium</option>
+    </select>
+    <textarea name="message" placeholder="Message ou instructions" rows="4"></textarea>
+    <button type="submit">Envoyer la commande</button>
+  </form>
+</div>
+
+<footer>
+  <p>&copy; 2025 Israël ADAKPON | Contact : +229 0140615372</p>
+</footer>
+
+</body>
+</html>
